@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoCar - Carros Usados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>AutoCar Veículos</h1>
+    <button id="btnDark" onclick="mudarTema()">Modo Escuro</button>
+  </div>
+
+  <div class="container">
+    <h2>Carros em Destaque</h2>
+    
+    <div class="lista-carros">
+      
+      <div class="card">
+        <h3>Gol 1.0 Flex</h3>
+        <p>Ano: 2018 | 75.000 km</p>
+        <p class="preco">R$ 38.900</p>
+        <button class="btn-comprar">Tenho Interesse</button>
+      </div>
+
+      <div class="card">
+        <h3>Civic LXR 2.0</h3>
+        <p>Ano: 2016 | 98.000 km</p>
+        <p class="preco">R$ 69.000</p>
+        <button class="btn-comprar">Tenho Interesse</button>
+      </div>
+
+      <div class="card">
+        <h3>Onix 1.0 Turbo</h3>
+        <p>Ano: 2021 | 42.000 km</p>
+        <p class="preco">R$ 58.500</p>
+        <button class="btn-comprar">Tenho Interesse</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function mudarTema() {
+      document.body.classList.toggle('dark');
+      
+      var btn = document.getElementById('btnDark');
+      if (document.body.classList.contains('dark')) {
+        btn.innerText = 'Modo Claro';
+      } else {
+        btn.innerText = 'Modo Escuro';
+      }
+    }
+  </script>
+
+</body>
+</html>
